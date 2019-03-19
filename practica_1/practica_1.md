@@ -36,11 +36,14 @@ Como podemos ver en la imagen que se encuentra a continaución, accedemos por SS
 
 ![Acceso por SSH de máquina 1 a la 2](imagen_7.png)
 
-### Acceder mediante la herramienta CURL desde una máquina virtual a otra
+### Acceder mediante la herramienta cURL desde una máquina virtual a otra
+Prueba de acceso mediante cURL de la máquina virtual 1 a la 2:
 
-![Acceso por CURL de máquina 1 a la 2](imagen_5.png)
+![Acceso por cURL de máquina 1 a la 2](imagen_5.png)
 
-![Acceso por CURL de máquina 2 a la 1](imagen_6.png)
+Prueba de acceso mediante cURL de la máquina virtual 2 a la 1:
+
+![Acceso por cURL de máquina 2 a la 1](imagen_6.png)
 
 
 
