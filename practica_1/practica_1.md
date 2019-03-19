@@ -11,4 +11,10 @@ A continuación podemos ver una imagen de las direcciones IP de la máquina virt
 
 ![Dirección IP máquina virtual 1](imagen_1.png)
 
-Que en este caso la dirección IP es: 192.168.1.100
+Que en este caso la dirección IP es: 192.168.1.100 
+
+En la sigueinte imagen podemos ver las direcciones IP de la máquina virtual 2:
+
+![Dirección IP máquina virtual 2](imagen_2.png) 
+
+Que en este caso la dirección IP es: 192.168.1.101 
