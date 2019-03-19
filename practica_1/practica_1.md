@@ -30,3 +30,11 @@ Y aquí realizamos PING de la máquina 2 a la 1:
 ![PING de la máquina virtual 2 a la 1](imagen_3.png)
 
 Como podemos comprobar en las imagénes se realiza correctamente, por lo que las máquinas virtuales están conectadas entre si.
+
+### Acceder por SSH de una máquina virtual a otra
+Como podemos ver en la imagen que se encuentra a continaución, accedemos por SSH de la máquina virtual 1 a la 2:
+
+![Acceso por SSH de máquina 1 a la 2](imagen_7.png)
+
+
+
