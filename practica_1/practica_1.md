@@ -8,5 +8,7 @@ Para poder abordar la práticas debemos de realizar la instalación de Ubuntu Se
 
 ## Cuestiones a resolver
 A continuación podemos ver una imagen de las direcciones IP de la máquina virtual 1:
+
 ![Dirección IP máquina virtual 1](imagen_1.png)
+
 Que en este caso la dirección IP es: 192.168.1.100
