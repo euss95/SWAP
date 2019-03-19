@@ -19,3 +19,14 @@ En la sigueinte imagen podemos ver las direcciones IP de la máquina virtual 2:
 ![Dirección IP máquina virtual 2](imagen_2.png) 
 
 Que en este caso la dirección IP es: 192.168.1.101 
+
+### Hacemos PING entre las máquinas virtuales
+Aquí realizamos PING de la máquina 1 a la 2:
+
+![PING de la máquina virtual 1 a la 2](imagen_4.png)
+
+Y aquí realizamos PING de la máquina 2 a la 1:
+
+![PING de la máquina virtual 2 a la 1](imagen_3.png)
+
+Como podemos comprobar en las imagénes se realiza correctamente, por lo que las máquinas virtuales están conectadas entre si.
