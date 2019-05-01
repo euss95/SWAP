@@ -21,9 +21,9 @@ App = {
   },
 
   initContract: function() {
-    $.getJSON("Elecciones.json", function(election) {
+    $.getJSON("Elecciones.json", function(elecciones) {
       // Instantiate a new truffle contract from the artifact
-      App.contracts.Elecciones = TruffleContract(election);
+      App.contracts.Elecciones = TruffleContract(elecciones);
       // Connect provider to interact with contract
       App.contracts.Elecciones.setProvider(App.web3Provider);
 
