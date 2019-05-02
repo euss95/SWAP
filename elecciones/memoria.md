@@ -27,28 +27,6 @@
   
   ####   9. Bibliografía
   
-![](./imagenes/CompilarContratoV2.png)
-
-![](./imagenes/CompilarContratosV1.png)
-
-![](./imagenes/EjecucionContratoV2.png)
-
-![](./imagenes/TestV2.png)
-
-![](./imagenes/TestV2Fallo.png)
-
-![](./imagenes/TruffleConsoleV1.png)
-
-![](./imagenes/contratoV1.png)
-
-![](./imagenes/contratoV2.png)
-
-![](./imagenes/jsV1.png)
-
-![](./imagenes/contrato.png)
-
-![](./imagenes/contrato.png)
-  
 ##   1. ¿Qué es blockchain?
 
  ![](./imagenes/ethereum_blockchain_nodes_diagram.png)
@@ -80,8 +58,26 @@
 ![](./imagenes/GanacheCuentas1.png)
   
 ##   7. Nuestra primera aplicación
+
+![](./imagenes/TruffleConsoleV1.png)
+
+![](./imagenes/contratoV1.png)
+
+![](./imagenes/jsV1.png)
+
+![](./imagenes/CompilarContratosV1.png)
   
 ##   8. Desarrollo de la aplicación
+
+![](./imagenes/CompilarContratoV2.png)
+
+![](./imagenes/EjecucionContratoV2.png)
+
+![](./imagenes/TestV2.png)
+
+![](./imagenes/TestV2Fallo.png)
+
+![](./imagenes/contratoV2.png)
 
 ##   9. Bibliografía
 
