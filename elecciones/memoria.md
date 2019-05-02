@@ -29,43 +29,43 @@
   
 ![](./imagenes/CompilarContratoV2.png)
 
-![](./elecciones/imagenes/CompilarContratosV1.png)
+![](./imagenes/CompilarContratosV1.png)
 
-![](./elecciones/imagenes/EjecucionContratoV2.png)
+![](./imagenes/EjecucionContratoV2.png)
 
-![](./elecciones/imagenes/EthereumLogo.png)
+![](./imagenes/EthereumLogo.png)
 
-![](./elecciones/imagenes/EthereumPrices.png)
+![](./imagenes/EthereumPrices.png)
 
-![](./elecciones/imagenes/GanacheCuentas1.png)
+![](./imagenes/GanacheCuentas1.png)
 
-![](./elecciones/imagenes/HyperledgerLogo.png)
+![](./imagenes/HyperledgerLogo.png)
 
-![](./elecciones/imagenes/Metamask+Ganache+Truffle.png)
+![](.imagenes/Metamask+Ganache+Truffle.png)
 
-![](./elecciones/imagenes/TestV2.png)
+![](./imagenes/TestV2.png)
 
-![](./elecciones/imagenes/TestV2Fallo.png)
+![](./imagenes/TestV2Fallo.png)
 
-![](./elecciones/imagenes/TruffleConsoleV1.png)
+![](./imagenes/TruffleConsoleV1.png)
 
-![](./elecciones/imagenes/contratoV1.png)
+![](./imagenes/contratoV1.png)
 
-![](./elecciones/imagenes/contratoV2.png)
+![](./imagenes/contratoV2.png)
 
-![](./elecciones/imagenes/jsV1.png)
+![](./imagenes/jsV1.png)
 
-![](./elecciones/imagenes/contratosInteligentes.jpg)
+![](./imagenes/contratosInteligentes.jpg)
 
-![](./elecciones/imagenes/dapp_diagram.png)
+![](./imagenes/dapp_diagram.png)
 
-![](./elecciones/imagenes/ethereum_blockchain_nodes_diagram.png)
+![](./imagenes/ethereum_blockchain_nodes_diagram.png)
 
-![](./elecciones/imagenes/web_application_diagram.png)
+![](./imagenes/web_application_diagram.png)
 
-![](./elecciones/imagenes/contrato.png)
+![](./imagenes/contrato.png)
 
-![](./elecciones/imagenes/contrato.png)
+![](./imagenes/contrato.png)
   
 ##   1. ¿Qué es blockchain?
   
