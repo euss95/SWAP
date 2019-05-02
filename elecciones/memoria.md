@@ -53,9 +53,25 @@
   
 ##   6. Instalación de las herramientas de desarrollo
 
+  $ node -v
+  
+  ![](./imagenes/npm.PNG)
+  
+  $ npm install -g truffle
+  
+ 
+
 ![](.imagenes/Metamask+Ganache+Truffle.png)
 
+![](./imagenes/TruffleSuite.PNG)
+
+![](./imagenes/Truffle.PNG)
+
+![](./imagenes/Ganache.PNG)
+
 ![](./imagenes/GanacheCuentas1.png)
+
+![](./imagenes/metamask.PNG)
   
 ##   7. Nuestra primera aplicación
 
