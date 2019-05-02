@@ -11,13 +11,7 @@
 
   ####   1. ¿Qué es blockchain?
   
-  ![](./imagenes/ethereum_blockchain_nodes_diagram.png)
-  
   ####   2. Nuestro proyecto
-  
-  ![](./imagenes/web_application_diagram.png)
-  
-  ![](./imagenes/dapp_diagram.png)
   
   ####   3. ¿Porqué blockchain?
   
@@ -39,16 +33,6 @@
 
 ![](./imagenes/EjecucionContratoV2.png)
 
-![](./imagenes/EthereumLogo.png)
-
-![](./imagenes/EthereumPrices.png)
-
-![](./imagenes/GanacheCuentas1.png)
-
-![](./imagenes/HyperledgerLogo.png)
-
-![](.imagenes/Metamask+Ganache+Truffle.png)
-
 ![](./imagenes/TestV2.png)
 
 ![](./imagenes/TestV2Fallo.png)
@@ -61,23 +45,39 @@
 
 ![](./imagenes/jsV1.png)
 
-![](./imagenes/contratosInteligentes.jpg)
-
 ![](./imagenes/contrato.png)
 
 ![](./imagenes/contrato.png)
   
 ##   1. ¿Qué es blockchain?
+
+ ![](./imagenes/ethereum_blockchain_nodes_diagram.png)
   
 ##   2. Nuestro proyecto
+
+ ![](./imagenes/web_application_diagram.png)
+  
+ ![](./imagenes/dapp_diagram.png)
  
 ##   3. ¿Porqué blockchain?
   
 ##   4. ¿Qué son los contratos inteligentes?
+
+![](./imagenes/contratosInteligentes.jpg)
   
 ##   5. Hyperledger y Ethereum
+
+![](./imagenes/EthereumLogo.png)
+
+![](./imagenes/EthereumPrices.png)
+
+![](./imagenes/HyperledgerLogo.png)
   
 ##   6. Instalación de las herramientas de desarrollo
+
+![](.imagenes/Metamask+Ganache+Truffle.png)
+
+![](./imagenes/GanacheCuentas1.png)
   
 ##   7. Nuestra primera aplicación
   
