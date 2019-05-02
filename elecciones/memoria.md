@@ -27,7 +27,7 @@
   
   ####   9. Bibliografía
   
-![](./elecciones/imagenes/CompilarContratoV2.png)
+![](elecciones/imagenes/CompilarContratoV2.png)
 
 ![](./elecciones/imagenes/CompilarContratosV1.png)
 
