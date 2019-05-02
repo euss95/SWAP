@@ -3,7 +3,6 @@
 ## Autores
 
   Pablo García Llorente
-  
   Eugenio Alcántara García
   
 
@@ -12,6 +11,7 @@
   ####   1. ¿Qué es blockchain?
   
   ####   2. Nuestro proyecto
+  #####     2.1. ¿Qué es una dApp?
   
   ####   3. ¿Porqué blockchain?
   
@@ -33,15 +33,35 @@
   
 ##   1. ¿Qué es blockchain?
 
- ![](./imagenes/ethereum_blockchain_nodes_diagram.png)
+Blockchain es una base de datos descentralizada que almacena un registro de activos y transacciones en un red Peer-to-Peer (o P2P). Describiéndolo de una forma sencilla, es un libro contable que registra quién posee qué y quién negocia con qué. Las transacciones son aseguradas a través del uso de criptografía. Los bloques, que agrupan transacciones, son asegurados con criptografía también y enlazados en una secuencia temporal creando un registro inmutable. Este registro es replicado en cada ordenador que usa la red lo que hace que sea extremadamente complicado de manipular a diferencia de una base de datos controlado por una única entidad o autoridad central.
+
+![](./imagenes/ethereum_blockchain_nodes_diagram.png)
+
+Blockchain surgió y se popularizó a partir de las cryptomonedas, más específicamente Bitcoin. Pero esta tecnología puede ser usada con otros muchos tipos de activos digitales: certificados, títulos, contratos, nuevos activos digitales o cualquier activo del mundo real representado de forma inequívoca con su representación digital, incluida la información personal.
+
+Blockchain permite el compartir la información de forma clara y segura, permitiendo a los usuarios confiar en la tecnología y que sus activos están asegurados en ella. Existen múltiples tipos de blockchain dependiendo de su accesibilidad, puede ser pública, como Ethereum o Bitcoin, en las cuales todo el mundo puede unirse, o privada, como Hyperledger o Quorum, que requieren la aprobación de los participantes para poder acceder.
   
 ##   2. Nuestro proyecto
 
- ![](./imagenes/web_application_diagram.png)
-  
- ![](./imagenes/dapp_diagram.png)
+![](./imagenes/web_application_diagram.png)
+
+![](./imagenes/dapp_diagram.png)
  
 ##   3. ¿Porqué blockchain?
+  
+#### Ventajas e inconvenientes de la tecnología blockchain  
+
+La información está descentralizada, esto es una ventaja e inconveniente a la vez ya que la información es segura y dificil de borrar o modificar por quien no debería pero en el caso de contener una gran cantidad de información esto puede causar problemas a los usuarios.
+
+Es robusto, al ser redundante tiene una tolerancia a fallos muy alta, ningún nodo es crucial para el registro de transacciones, aunque un nodo no esté disponible el resto seguirá funcionando, y si este nodo quiere sincronizarse puede hacerlo fácilmente obteniendo la información de otros nodos.
+
+La visibilidad de la información es una ventaja y un inconveniente, ya que en algunas aplicaciones que todas las operaciones sean visibles por todos los usuarios, como con las cryptomonedas, esto es una ventaja pero pueden existir otras que requieran absoluta privacidad en las transacciones, limitando el uso de blockchain en ellas.
+
+El uso de blockchain requiere más operaciones que en el caso de una base de datos centralizada, sobre todo esto se dispara cuanta más seguridad se utiliza.
+
+Para finalizar includo un gráfico que nos da una idea de cuándo puede se útil utilizar blockchain y que tipo utilizar.
+  
+![](./imagenes/blockchain-vs-bbdd.png)
   
 ##   4. ¿Qué son los contratos inteligentes?
 
@@ -65,16 +85,35 @@ Este paquete se puede descargar desde https://nodejs.org/en/, como podemos ver e
 
 ![](./imagenes/npm.PNG)
 
-Para comprobar que se ha instalado correctamente ejecutamos el siguiente comando desde la terminal:
+Para comprobar que se ha instalado correctamente ejecutamos el siguiente comando, que muestra la versión de nodejs instalada, desde la terminal:
 
      $ node -v
- 
+     
+![](.imagenes/Metamask+Ganache+Truffle.png)     
+     
+###     6.2. Truffle Framework
+
+Truffle es el framework más popular para el desarrollo de Ethereum hoy en día. Este nos ofrece:
+
+  -Compilación, enlace y despigue de contratos inteligentes desde el propio Truffle.
+  -Depuración y testing automatizado de contratos.
+  -Scripts de despliegue y migraciones en redes públicas y privadas.
+  -Acceso a cientos de paquetes externos y gestión con EthPM y NPM.
+  -Consola interactiva para comunicación directa con los contratos.
+  -Interacción con contratos mediante scripts externos.
   
-  $ npm install -g truffle
+Todo esto lo veremos a lo largo del desarrollo del proyecto. Para instalar truffle requerimos de NPM, el cual hemos instalado previamente, en la terminal escribiremos el siguiente comando:
+
+    $ npm install -g truffle
+
+####    6.2.1. Ganache
+###     6.3. Metamask
+  
+
   
  
 
-![](.imagenes/Metamask+Ganache+Truffle.png)
+
 
 ![](./imagenes/TruffleSuite.PNG)
 
@@ -121,6 +160,8 @@ https://metamask.io/
 https://www.youtube.com/watch?v=ZIGUC9JAAw8
 
 https://truffleframework.com/docs/truffle/overview
+
+https://aprendeblockchain.wordpress.com/desarrollo-en-ethereum/desarrollo-con-truffle-i/
 
 https://truffleframework.com/docs/ganache/overview
 
