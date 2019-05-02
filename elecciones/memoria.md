@@ -20,6 +20,10 @@
   ####   5. Hyperledger y Ethereum
   
   ####   6. Instalación de las herramientas de desarrollo
+  #####     6.1. Node Package Manager
+  #####     6.2. Truffle Framework
+  ######    6.2.1. Ganache
+  #####     6.3. Metamask
   
   ####   7. Nuestra primera aplicación
   
@@ -53,9 +57,16 @@
   
 ##   6. Instalación de las herramientas de desarrollo
 
-  $ node -v
-  
-  ![](./imagenes/npm.PNG)
+### 6.1. Node Package Manager(NPM)
+
+La primera herramienta que debemos instalar en nuestro sistema es el Node Package Manager(NPM) que viene con Node.js. Este paquete se puede descargar desde https://nodejs.org/en/, como podemos ver en la siguiente imagen, se debe tener en cuenta que nosotros hemos realizado la aplicación en un Mac pero las imagenes las hemos tomado desde un Windows.
+
+![](./imagenes/npm.PNG)
+
+Para comprobar que se ha instalado correctamente ejecutamos el siguiente comando desde la terminal:
+
+     $ node -v
+ 
   
   $ npm install -g truffle
   
