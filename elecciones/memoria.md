@@ -11,7 +11,13 @@
 
   ####   1. ¿Qué es blockchain?
   
+  ![](./imagenes/ethereum_blockchain_nodes_diagram.png)
+  
   ####   2. Nuestro proyecto
+  
+  ![](./imagenes/web_application_diagram.png)
+  
+  ![](./imagenes/dapp_diagram.png)
   
   ####   3. ¿Porqué blockchain?
   
@@ -56,12 +62,6 @@
 ![](./imagenes/jsV1.png)
 
 ![](./imagenes/contratosInteligentes.jpg)
-
-![](./imagenes/dapp_diagram.png)
-
-![](./imagenes/ethereum_blockchain_nodes_diagram.png)
-
-![](./imagenes/web_application_diagram.png)
 
 ![](./imagenes/contrato.png)
 
