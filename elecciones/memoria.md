@@ -59,7 +59,9 @@
 
 ### 6.1. Node Package Manager(NPM)
 
-La primera herramienta que debemos instalar en nuestro sistema es el Node Package Manager(NPM) que viene con Node.js. Este paquete se puede descargar desde https://nodejs.org/en/, como podemos ver en la siguiente imagen, se debe tener en cuenta que nosotros hemos realizado la aplicación en un Mac pero las imagenes las hemos tomado desde un Windows.
+La primera herramienta que debemos instalar en nuestro sistema es el Node Package Manager(NPM) que viene con Node.js. Node Package Manager es un gestor de paquetes, el cual simplificará el proceso de trabajar con Node, ya que gracias a él podremos tener cualquier librería disponible con una línea de código. NPM nos ayudrá a administrar nuestros módulos, distribuir paqutes y agregar dependencias de forma sencilla. 
+
+Este paquete se puede descargar desde https://nodejs.org/en/, como podemos ver en la siguiente imagen, se debe tener en cuenta que nosotros hemos realizado la aplicación en un Mac pero las imagenes las hemos tomado desde un Windows.
 
 ![](./imagenes/npm.PNG)
 
