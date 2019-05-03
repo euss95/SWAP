@@ -3,33 +3,33 @@
 ## Autores
 
   Pablo García Llorente
+  
   Eugenio Alcántara García
   
-
 ## Índice
 
-  ####   1. ¿Qué es blockchain?
+  ####   -1. ¿Qué es blockchain?
   
-  ####   2. Nuestro proyecto
-  #####     2.1. ¿Qué es una dApp?
+  ####   -2. Nuestro proyecto
+  #####     --2.1. ¿Qué es una dApp?
   
-  ####   3. Ventajas e inconvenientes de la tecnología blockchain 
+  ####   -3. Ventajas e inconvenientes de la tecnología blockchain 
   
-  ####   4. ¿Qué son los contratos inteligentes?
+  ####   -4. ¿Qué son los contratos inteligentes?
   
-  ####   5. Hyperledger y Ethereum
+  ####   -5. Hyperledger y Ethereum
   
-  ####   6. Instalación de las herramientas de desarrollo
-  #####     6.1. Node Package Manager
-  #####     6.2. Truffle Framework
-  ######    6.2.1. Ganache
-  #####     6.3. Metamask
+  ####   -6. Instalación de las herramientas de desarrollo
+  #####     --6.1. Node Package Manager
+  #####     --6.2. Truffle Framework
+  ######    ---6.2.1. Ganache
+  #####     --6.3. Metamask
   
-  ####   7. Nuestra primera aplicación
+  ####   -7. Nuestra primera aplicación
   
-  ####   8. Desarrollo de la aplicación
+  ####   -8. Desarrollo de la aplicación
   
-  ####   9. Bibliografía
+  ####   -9. Bibliografía
   
 ##   1. ¿Qué es blockchain?
 
@@ -69,13 +69,19 @@ Para finalizar includo un gráfico que nos da una idea de cuándo puede se útil
 
 ![](./imagenes/EthereumLogo.png)
 
+Ethereum es una plataforma blockchain descentralizada que nos permite construir aplicaciones donde el Ether es la moneda utilizada para pagar por el uso de recursos en la red, las aplicaciones creadas creadas mediante el uso de Ethereum buscan ser fáciles de desarrollar, seguras e interactivas con otras aplicaciones. Esto se consigue a partir de una blockchain con un lenguaje de programación Turing-completo, permitiendo a cualquiera escribir contratos inteligentes y aplicaciones independientes accesibles a todo el mundo.
+
+Como hemos mencionado antes, el uso de la red Ethereum requiere que el usuario, en el caso de querer modificar información, utilice recursos en forma de Ether, de la cual hablaremos con más profundidad a continuación, esto significa que si quisiéramos hacer nuestra aplicación pública en la red de Ethereum, se requeriría dinero, por lo tanto ejecutaremos nuestra aplicación en modo local desde el navegador en la dirección http://localhost:8000 gracias a Truffle, Ganache y Metamask, herramientas que comentaremos más adelante.
+
+También cabe mencionar que --EU HABLA AQUI SOBRE LA CRYPTOMONEDA QUE YO NO TENGO MUCHA IDEA--
+
 ![](./imagenes/EthereumPrices.png)
   
 ##   6. Instalación de las herramientas de desarrollo
 
 ### 6.1. Node Package Manager(NPM)
 
-La primera herramienta que debemos instalar en nuestro sistema es el Node Package Manager(NPM) que viene con Node.js. Node Package Manager es un gestor de paquetes, el cual simplificará el proceso de trabajar con Node, ya que gracias a él podremos tener cualquier librería disponible con una línea de código. NPM nos ayudrá a administrar nuestros módulos, distribuir paqutes y agregar dependencias de forma sencilla. 
+La primera herramienta que debemos instalar en nuestro sistema es el Node Package Manager(NPM) que viene con Node.js. Node Package Manager es un gestor de paquetes, el cual simplificará el proceso de trabajar con Node, ya que gracias a él podremos tener cualquier librería disponible con una línea de código. NPM nos ayudará a administrar nuestros módulos, distribuir paqutes y agregar dependencias de forma sencilla. 
 
 Este paquete se puede descargar desde https://nodejs.org/en/, como podemos ver en la siguiente imagen, se debe tener en cuenta que nosotros hemos realizado la aplicación en un Mac pero las imagenes las hemos tomado desde un Windows.
 
@@ -98,7 +104,7 @@ Truffle es el framework más popular para el desarrollo de Ethereum hoy en día.
   -Consola interactiva para comunicación directa con los contratos.
   -Interacción con contratos mediante scripts externos.
   
-Todo esto lo veremos a lo largo del desarrollo del proyecto. Para instalar truffle requerimos de NPM, el cual hemos instalado previamente, en la terminal escribiremos el siguiente comando:
+Todo esto lo veremos a lo largo del desarrollo del proyecto. Para instalar Truffle requerimos de NPM, el cual hemos instalado previamente, en la terminal escribiremos el siguiente comando:
 
     $ npm install -g truffle
 
