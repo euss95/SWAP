@@ -13,7 +13,7 @@
   ####   2. Nuestro proyecto
   #####     2.1. ¿Qué es una dApp?
   
-  ####   3. ¿Porqué blockchain?
+  ####   3. Ventajas e inconvenientes de la tecnología blockchain 
   
   ####   4. ¿Qué son los contratos inteligentes?
   
@@ -47,9 +47,7 @@ Blockchain permite el compartir la información de forma clara y segura, permiti
 
 ![](./imagenes/dapp_diagram.png)
  
-##   3. ¿Porqué blockchain?
-  
-#### Ventajas e inconvenientes de la tecnología blockchain  
+##   3. Ventajas e inconvenientes de la tecnología blockchain  
 
 La información está descentralizada, esto es una ventaja e inconveniente a la vez ya que la información es segura y dificil de borrar o modificar por quien no debería pero en el caso de contener una gran cantidad de información esto puede causar problemas a los usuarios.
 
@@ -67,13 +65,11 @@ Para finalizar includo un gráfico que nos da una idea de cuándo puede se útil
 
 ![](./imagenes/contratosInteligentes.jpg)
   
-##   5. Hyperledger y Ethereum
+##   5. Ethereum
 
 ![](./imagenes/EthereumLogo.png)
 
 ![](./imagenes/EthereumPrices.png)
-
-![](./imagenes/HyperledgerLogo.png)
   
 ##   6. Instalación de las herramientas de desarrollo
 
@@ -88,10 +84,10 @@ Este paquete se puede descargar desde https://nodejs.org/en/, como podemos ver e
 Para comprobar que se ha instalado correctamente ejecutamos el siguiente comando, que muestra la versión de nodejs instalada, desde la terminal:
 
      $ node -v
-     
-![](.imagenes/Metamask+Ganache+Truffle.png)     
-     
+         
 ###     6.2. Truffle Framework
+
+![](./imagenes/Truffle.PNG)
 
 Truffle es el framework más popular para el desarrollo de Ethereum hoy en día. Este nos ofrece:
 
@@ -107,23 +103,21 @@ Todo esto lo veremos a lo largo del desarrollo del proyecto. Para instalar truff
     $ npm install -g truffle
 
 ####    6.2.1. Ganache
-###     6.3. Metamask
-  
-
-  
- 
-
-
-
-![](./imagenes/TruffleSuite.PNG)
-
-![](./imagenes/Truffle.PNG)
 
 ![](./imagenes/Ganache.PNG)
 
 ![](./imagenes/GanacheCuentas1.png)
 
+
+###     6.3. Metamask
+
 ![](./imagenes/metamask.PNG)
+
+MetaMask es la forma más fácil de interactuar con dApps en el navegador. Es una extensión de Chrome o Firefox que conecta a una red de Ethereum sin ejecutar un nodo completo en el navegador de la máquina. Puede conectar a la red principal de Ethereum, cualquiera de sus redes de prueba (Ropsten, Kovan, y Rinkeby), o una blockchain local, como será la nuestra, creada por Ganache. Para el desarrollo con Truffle, esto significa que podremos utilizar nuestra dApp de la misma forma que los usuarios interactuarán con una red en vivo.
+
+Para instalar Metamask debemos seguir el siguiente enlace: https://metamask.io/ y añadir la extensión al navegador de nuestra elección (Chrome o Firefox). Explicaremos la utilización de Metamask más extensivamente a lo largo del desarrollo de la aplicación.
+  
+![](./imagenes/Metamask+Ganache+Truffle.png)   
   
 ##   7. Nuestra primera aplicación
 
@@ -177,3 +171,4 @@ https://www.youtube.com/watch?v=3681ZYbDSSk
 
 https://medium.com/coinmonks/developing-ethereum-dapps-with-truffle-ganache-and-metamask-31bc5023ce91
 
+![](./imagenes/TruffleSuite.PNG)
