@@ -73,7 +73,7 @@ Ethereum es una plataforma blockchain descentralizada que nos permite construir 
 
 Como hemos mencionado antes, el uso de la red Ethereum requiere que el usuario, en el caso de querer modificar información, utilice recursos en forma de Ether, de la cual hablaremos con más profundidad a continuación, esto significa que si quisiéramos hacer nuestra aplicación pública en la red de Ethereum, se requeriría dinero, por lo tanto ejecutaremos nuestra aplicación en modo local desde el navegador en la dirección http://localhost:8000 gracias a Truffle, Ganache y Metamask, herramientas que comentaremos más adelante.
 
-También cabe mencionar que --EU HABLA AQUI SOBRE LA CRYPTOMONEDA QUE YO NO TENGO MUCHA IDEA--
+También cabe mencionar que --EU HABLA AQUI SOBRE LA CRYPTOMONEDA QUE YO NO TENGO MUCHA IDEA AUNQUE VIENDO QUE NO SABES QUE LA CRYPTOMONEDA DE ETHEREUM ES ETHER NO SE QUE PENSAR--
 
 ![](./imagenes/EthereumPrices.png)
   
