@@ -40,4 +40,43 @@ contract("Elecciones", function(accounts) {
       assert.equal(voteCount, 1, "increments the candidato's vote count");
     })
   });
+  it("throws an exception for invalid candidatos", function() {
+    return Elecciones.deployed().then(function(instance) {
+      eleccionesInstance = instance;
+      return eleccionesInstance.vote(99, { from: accounts[1] })
+    }).then(assert.fail).catch(function(error) {
+      assert(error.message.indexOf('revert') >= 0, "error message must contain revert");
+      return eleccionesInstance.candidatos(1);
+    }).then(function(candidato1) {
+      var voteCount = candidato1[2];
+      assert.equal(voteCount, 1, "candidato 1 did not receive any votes");
+      return eleccionesInstance.candidatos(2);
+    }).then(function(candidato2) {
+      var voteCount = candidato2[2];
+      assert.equal(voteCount, 0, "candidato 2 did not receive any votes");
+    });
+  });
+  it("throws an exception for double voting", function() {
+    return Elecciones.deployed().then(function(instance) {
+      eleccionesInstance = instance;
+      candidatoId = 2;
+      eleccionesInstance.vote(candidatoId, { from: accounts[1] });
+      return eleccionesInstance.candidatos(candidatoId);
+    }).then(function(candidato) {
+      var voteCount = candidato[2];
+      assert.equal(voteCount, 1, "accepts first vote");
+      // Try to vote again
+      return eleccionesInstance.vote(candidatoId, { from: accounts[1] });
+    }).then(assert.fail).catch(function(error) {
+      assert(error.message.indexOf('revert') >= 0, "error message must contain revert");
+      return eleccionesInstance.candidatos(1);
+    }).then(function(candidato1) {
+      var voteCount = candidato1[2];
+      assert.equal(voteCount, 1, "candidato 1 did not receive any votes");
+      return eleccionesInstance.candidatos(2);
+    }).then(function(candidato2) {
+      var voteCount = candidato2[2];
+      assert.equal(voteCount, 1, "candidato 2 did not receive any votes");
+    });
+  });
 });

@@ -32,45 +32,71 @@ App = {
   },
 
   render: function() {
-    var electionInstance;
-    var loader = $("#loader");
-    var content = $("#content");
+  var eleccionesInstance;
+  var loader = $("#loader");
+  var content = $("#content");
 
-    loader.show();
-    content.hide();
+  loader.show();
+  content.hide();
 
-    // Load account data
-    web3.eth.getCoinbase(function(err, account) {
-      if (err === null) {
-        App.account = account;
-        $("#accountAddress").html("Your Account: " + account);
-      }
-    });
+  // Load account data
+  web3.eth.getCoinbase(function(err, account) {
+    if (err === null) {
+      App.account = account;
+      $("#accountAddress").html("Your Account: " + account);
+    }
+  });
 
-    // Load contract data
+  // Load contract data
+  App.contracts.Elecciones.deployed().then(function(instance) {
+    eleccionesInstance = instance;
+    return eleccionesInstance.candidatosCount();
+  }).then(function(candidatosCount) {
+    var candidatosResults = $("#candidatosResults");
+    candidatosResults.empty();
+
+    var candidatosSelect = $('#candidatosSelect');
+    candidatosSelect.empty();
+
+    for (var i = 1; i <= candidatosCount; i++) {
+      eleccionesInstance.candidatos(i).then(function(candidato) {
+        var id = candidato[0];
+        var name = candidato[1];
+        var voteCount = candidato[2];
+
+        // Render candidato Result
+        var candidatoTemplate = "<tr><th>" + id + "</th><td>" + name + "</td><td>" + voteCount + "</td></tr>"
+        candidatosResults.append(candidatoTemplate);
+
+        // Render candidato ballot option
+        var candidatoOption = "<option value='" + id + "' >" + name + "</ option>"
+        candidatosSelect.append(candidatoOption);
+      });
+    }
+    return eleccionesInstance.voters(App.account);
+  }).then(function(hasVoted) {
+    // Do not allow a user to vote
+    if(hasVoted) {
+      $('form').hide();
+    }
+    loader.hide();
+    content.show();
+  }).catch(function(error) {
+    console.warn(error);
+  });
+  
+  }
+
+  castVote: function() {
+    var candidatosId = $('#candidatossSelect').val();
     App.contracts.Elecciones.deployed().then(function(instance) {
-      electionInstance = instance;
-      return electionInstance.candidatosContador();
-    }).then(function(candidatosContador) {
-      var candidatosResults = $("#candidatosResults");
-      candidatosResults.empty();
-
-      for (var i = 1; i <= candidatosContador; i++) {
-        electionInstance.candidatos(i).then(function(candidato) {
-          var id = candidato[0];
-          var name = candidato[1];
-          var voteCount = candidato[2];
-
-          // Render candidato Result
-          var candidatoTemplate = "<tr><th>" + id + "</th><td>" + name + "</td><td>" + voteCount + "</td></tr>"
-          candidatosResults.append(candidatoTemplate);
-        });
-      }
-
-      loader.hide();
-      content.show();
-    }).catch(function(error) {
-      console.warn(error);
+      return instance.vote(candidatosId, { from: App.account });
+    }).then(function(result) {
+      // Wait for votes to update
+      $("#content").hide();
+      $("#loader").show();
+    }).catch(function(err) {
+      console.error(err);
     });
   }
 };
