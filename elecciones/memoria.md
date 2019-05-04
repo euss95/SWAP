@@ -11,19 +11,22 @@
   ####   -1. ¿Qué es blockchain?
   
   ####   -2. Nuestro proyecto
-  #####     --2.1. ¿Qué es una dApp?
+  #####     -- ¿Qué es una dApp?
   
   ####   -3. Ventajas e inconvenientes de la tecnología blockchain 
   
   ####   -4. ¿Qué son los contratos inteligentes?
   
-  ####   -5. Hyperledger y Ethereum
+  ####   -5. Ethereum
+  #####     -- ¿Qué es Ethereum?
+  #####     -- ¿Qué es el Ether?
+  #####     -- ¿Qué es el Gas?
   
   ####   -6. Instalación de las herramientas de desarrollo
-  #####     --6.1. Node Package Manager
-  #####     --6.2. Truffle Framework
-  ######    ---6.2.1. Ganache
-  #####     --6.3. Metamask
+  #####     -- Node Package Manager
+  #####     -- Truffle Framework
+  ######    --- Ganache
+  #####     -- Metamask
   
   ####   -7. Nuestra primera aplicación
   
@@ -63,23 +66,43 @@ Para finalizar includo un gráfico que nos da una idea de cuándo puede se útil
   
 ##   4. ¿Qué son los contratos inteligentes?
 
+Los contratos inteligentes son programas informáticos que se asientan sobre una cadena de bloques, en el cual son programadas unas condiciones de actuación y se ejecutan en el momento que estas se cumplen. En otras palabras, es un programa informático que vincula a las partes involucradas forzando el cumplimento de las reglas establecidas de forma automatizada y descentralizada.
+
+Tal y como heos mencionado anteriormente, los contratos inteligentes funcionan automáticamente ejecutando unas actuaciones predefinidas en su código en el momento que estas se cumplen. Tal y como podemos ver en la imagen a continuación.
+
 ![](./imagenes/contratosInteligentes.jpg)
+  
+Un posible ejemplo de contrato   
   
 ##   5. Ethereum
 
-![](./imagenes/EthereumLogo.png)
+![](./imagenes/EthereumLogo.png)    
+
+###  ¿Qué es Ethereum?
 
 Ethereum es una plataforma blockchain descentralizada que nos permite construir aplicaciones donde el Ether es la moneda utilizada para pagar por el uso de recursos en la red, las aplicaciones creadas creadas mediante el uso de Ethereum buscan ser fáciles de desarrollar, seguras e interactivas con otras aplicaciones. Esto se consigue a partir de una blockchain con un lenguaje de programación Turing-completo, permitiendo a cualquiera escribir contratos inteligentes y aplicaciones independientes accesibles a todo el mundo.
 
 Como hemos mencionado antes, el uso de la red Ethereum requiere que el usuario, en el caso de querer modificar información, utilice recursos en forma de Ether, de la cual hablaremos con más profundidad a continuación, esto significa que si quisiéramos hacer nuestra aplicación pública en la red de Ethereum, se requeriría dinero, por lo tanto ejecutaremos nuestra aplicación en modo local desde el navegador en la dirección http://localhost:8000 gracias a Truffle, Ganache y Metamask, herramientas que comentaremos más adelante.
 
-También cabe mencionar que --EU HABLA AQUI SOBRE LA CRYPTOMONEDA QUE YO NO TENGO MUCHA IDEA AUNQUE VIENDO QUE NO SABES QUE LA CRYPTOMONEDA DE ETHEREUM ES ETHER NO SE QUE PENSAR--
+### ¿Qué es el Ether?
+
+Ether es la cryptomoneda de Ethereum, es utilizada por los clientes de la plataforma ethereum para realizar pagos a otras personas o a máquinas que ejecutan operaciones solicitadas. Es decir, ether es el incentivo que asegura que los desarrolladores escriban aplicaciones de calidad (la codificación innecesaria cuesta más) y que la red permanezca saludable (la gente es recompensada por los recursos aportados).
+
+Aquí podemos ver una gráfica con los precios de Ether a lo largo del tiempo:
 
 ![](./imagenes/EthereumPrices.png)
+
+### ¿Qué es el Gas?
+
+Con el fin de evitar bucles infinitos accidentales, hostiles, u otro desperdicio computacional en el código, cada transacción es obligada a establecer un límite al número de pasos computacionales de ejecución de código.
+
+El Gas es el coste que tiene el realizar una operación o un conjunto de operaciones en la red Ethereum. Estas operaciones pueden ser varias: desde realizar una transacción hasta ejecutar un contrato inteligente o crear una aplicación descentralizada.
+
+Al igual que en el mundo físico, en Ethereum también hay trabajos que cuestan más que otros. Si la operación que queremos realizar requiere un mayor uso de recursos por parte de los nodos que forman la plataforma, esto hará que el Gas aumente también.
   
 ##   6. Instalación de las herramientas de desarrollo
 
-### 6.1. Node Package Manager(NPM)
+### Node Package Manager(NPM)
 
 La primera herramienta que debemos instalar en nuestro sistema es el Node Package Manager(NPM) que viene con Node.js. Node Package Manager es un gestor de paquetes, el cual simplificará el proceso de trabajar con Node, ya que gracias a él podremos tener cualquier librería disponible con una línea de código. NPM nos ayudará a administrar nuestros módulos, distribuir paqutes y agregar dependencias de forma sencilla. 
 
@@ -91,7 +114,7 @@ Para comprobar que se ha instalado correctamente ejecutamos el siguiente comando
 
      $ node -v
          
-###     6.2. Truffle Framework
+### Truffle Framework
 
 ![](./imagenes/Truffle.PNG)
 
@@ -108,14 +131,14 @@ Todo esto lo veremos a lo largo del desarrollo del proyecto. Para instalar Truff
 
     $ npm install -g truffle
 
-####    6.2.1. Ganache
+#### Ganache
 
 ![](./imagenes/Ganache.PNG)
 
 ![](./imagenes/GanacheCuentas1.png)
 
 
-###     6.3. Metamask
+### Metamask
 
 ![](./imagenes/metamask.PNG)
 
@@ -149,6 +172,10 @@ Para instalar Metamask debemos seguir el siguiente enlace: https://metamask.io/ 
 
 ##   9. Bibliografía
 
+https://www.lis-solutions.es/blog/blockchain_contratos_inteligentes/
+
+https://dtecdeal.com/guia-simple-blockchain/
+
 https://criptomonedasybitcoin.com/contratos-inteligentes/
 
 https://criptomonedasybitcoin.com/la-blockchain-a-fondo/
@@ -167,8 +194,6 @@ https://truffleframework.com/docs/ganache/overview
 
 https://www.ethereum.org/
 
-https://www.hyperledger.org/
-
 https://solidity.readthedocs.io/en/v0.5.8/
 
 www.dappuniversity.com/articles/the-ultimate-ethereum-dapp-tutorial
@@ -177,4 +202,4 @@ https://www.youtube.com/watch?v=3681ZYbDSSk
 
 https://medium.com/coinmonks/developing-ethereum-dapps-with-truffle-ganache-and-metamask-31bc5023ce91
 
-![](./imagenes/TruffleSuite.PNG)
+
