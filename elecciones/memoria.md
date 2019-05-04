@@ -137,6 +137,12 @@ Todo esto lo veremos a lo largo del desarrollo del proyecto. Para instalar Truff
 
 ![](./imagenes/Ganache.PNG)
 
+La página oficial de Ganache, https://truffleframework.com/ganache, lo describe como blockchain en un click, crea una blockchain de Ethereum rápidamente que te permita probar, ejecutar comandos, e inspeccionar el estado mientras controlas como funciona la cadena.
+
+Ganache te permite visualizar la información de las cuentas, su estado, incluyendo sus direcciones, claves privadas, transacciones y balances, ver el log de la blockchain interna de Ganache, incluyendo las respuestas y otra información vital para la corrección de errores. También incluye controles avanzados de minería, un navegador que permite examinar todos los bloques y transacciones para obtener conocimiento sobre lo que ocurre.
+
+A continuación podemos ver 
+
 ![](./imagenes/GanacheCuentas1.png)
 
 
