@@ -49,8 +49,10 @@ Blockchain permite el compartir la información de forma clara y segura, permiti
 ##   2. Nuestro proyecto
 
 Hemos decidido crear un sistema de votación a través de la Blockchain. Si en vez de hacerlo en la blockchain, lo hiciésemos en una aplicación en la web tendríamos una seria de problemas tales como:
+
     - Los datos podrían ser cambiados en la base de datos.
     - El código fuente de la aplicación podría ser cambiado también en cualquier momento. 
+    
 Queremos hacerla en la Blockchain, donde cualquier persona conectada a la web pueda participar en la votación. Nos tenemos que asegurar de que sus votos sean contabilizados y que solo sean contados una vez. 
 
 ![](./imagenes/web_application_diagram.png)
