@@ -73,9 +73,7 @@ Los contratos inteligentes son programas informáticos que se asientan sobre una
 Tal y como heos mencionado anteriormente, los contratos inteligentes funcionan automáticamente ejecutando unas actuaciones predefinidas en su código en el momento que estas se cumplen. Tal y como podemos ver en la imagen a continuación.
 
 ![](./imagenes/contratosInteligentes.jpg)
-  
-Un posible ejemplo de contrato   
-  
+    
 ##   5. Ethereum
 
 ![](./imagenes/EthereumLogo.png)    
