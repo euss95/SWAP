@@ -3,7 +3,6 @@
 ## Autores
 
   Pablo García Llorente
-  
   Eugenio Alcántara García
   
 ## Índice
