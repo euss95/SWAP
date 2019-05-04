@@ -141,7 +141,7 @@ La página oficial de Ganache, https://truffleframework.com/ganache, lo describe
 
 Ganache te permite visualizar la información de las cuentas, su estado, incluyendo sus direcciones, claves privadas, transacciones y balances, ver el log de la blockchain interna de Ganache, incluyendo las respuestas y otra información vital para la corrección de errores. También incluye controles avanzados de minería, un navegador que permite examinar todos los bloques y transacciones para obtener conocimiento sobre lo que ocurre.
 
-A continuación podemos ver 
+A continuación podemos ver la interfaz de Ganache con las cuentas que hemos utilizado para nuestra aplicación.
 
 ![](./imagenes/GanacheCuentas1.png)
 
