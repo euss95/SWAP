@@ -57,6 +57,8 @@ Queremos hacerla en la Blockchain, donde cualquier persona conectada a la web pu
 
 ![](./imagenes/web_application_diagram.png)
 
+En vez de tener una red, un servidor central y una base da datos. La Blockchain es una red y una base de datos todo en uno. 
+
 ![](./imagenes/dapp_diagram.png)
  
 ##   3. Ventajas e inconvenientes de la tecnología blockchain  
