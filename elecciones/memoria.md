@@ -42,7 +42,7 @@ Blockchain es una base de datos descentralizada que almacena un registro de acti
 
 Blockchain surgió y se popularizó a partir de las cryptomonedas, más específicamente Bitcoin. Pero esta tecnología puede ser usada con otros muchos tipos de activos digitales: certificados, títulos, contratos, nuevos activos digitales o cualquier activo del mundo real representado de forma inequívoca con su representación digital, incluida la información personal.
 
-Blockchain permite el compartir la información de forma clara y segura, permitiendo a los usuarios confiar en la tecnología y que sus activos están asegurados en ella. Existen múltiples tipos de blockchain dependiendo de su accesibilidad, puede ser pública, como Ethereum o Bitcoin, en las cuales todo el mundo puede unirse, o privada, como Hyperledger o Quorum, que requieren la aprobación de los participantes para poder acceder.
+Blockchain permite el compartir la información de forma clara y segura, permitiendo a los usuarios confiar en la tecnología y que sus activos están asegurados en ella. Existen múltiples tipos de blockchain dependiendo de su accesibilidad, puede ser pública, como Ethereum o Bitcoin, en las cuales todo el mundo puede unirse, los unicos requisitos son un ordenador y acceso a Internet, privada, como Hyperledger o Quorum, que requieren la aprobación de los participantes para poder acceder, o híbridas, que son una combinación de las públicas y las privadas, en ellas los nodos participantes son elegidos o restringidos por una persona o grupo de personas pero todas las transacciones son públicas.
   
 ##   2. Nuestro proyecto
 
