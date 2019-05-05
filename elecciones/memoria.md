@@ -201,8 +201,14 @@ Procedemos abrir la consola con el siguiente comando para interactuar con el con
 Una vez dentro de la consola, debemos lanzar una instancia del contrato para ver si podemos leer el nombre de los canditatos. Esto se puede ver perfectamente en la iamgen que se encuentra a continucación. En la cual nos muestra al 'Candidato 1'. 
 
 ![](./imagenes/TruffleConsoleV1.png)
+
+Todo esto ha formado parte de una pequeña aplicación para ver si funcionaba de forma correcta y ya poder escalar a la aplicaión completa.  
   
 ##   8. Desarrollo de la aplicación
+
+Como se puede apreciar, hemos añadido una función para añadir candidatos que coge un argumento que represneta el nombre del candidato. La visiblidad de esta función es provada puesto que solo queremos llamarla dentro del contrato. 
+
+![](./imagenes/contratoV2.png)
 
 ![](./imagenes/CompilarContratoV2.png)
 
@@ -211,8 +217,6 @@ Una vez dentro de la consola, debemos lanzar una instancia del contrato para ver
 ![](./imagenes/TestV2.png)
 
 ![](./imagenes/TestV2Fallo.png)
-
-![](./imagenes/contratoV2.png)
 
 ##   9. Bibliografía
 
