@@ -190,13 +190,13 @@ Para poder desplegar el contrato en la Blockchain tendremos que crear un nuevo a
 
 Una vez hayamos miagrado nuestro contrato inteligente a la blockchain con el comando:
 
-  $ truffle migrate
+    $ truffle migrate
 
 Procedemos abrir la consola con el siguiente comando para interactuar con el contrato.
 
-  $ truffle console
+    $ truffle console
 
-Una vez dentro de la consola, debemos lanzar una instancia del contrato para ver si podemos leer el nombre de los canditatos. Esto se puede ver perfectamente en la iamgen que se encuentra a continucación. En la cual nos muestra al 'candidato 1'. 
+Una vez dentro de la consola, debemos lanzar una instancia del contrato para ver si podemos leer el nombre de los canditatos. Esto se puede ver perfectamente en la iamgen que se encuentra a continucación. En la cual nos muestra al 'Candidato 1'. 
 
 ![](./imagenes/TruffleConsoleV1.png)
 
