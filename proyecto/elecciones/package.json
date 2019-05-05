@@ -1,18 +1,19 @@
 {
-  "name": "pet-shop",
-  "version": "1.0.0",
+  "name": "dappu-election",
+  "version": "1.0.1",
   "description": "",
-  "main": "truffle.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "copy-contracts": "cp -f build/contracts/*.json src/contracts/",
+    "dev-server": "lite-server -c ./server-config",
+    "dev": "npm run copy-contracts && npm run dev-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "truffle": "^5.0.0",
+    "web3-utils": "^1.0.0-beta.37"
   }
 }
