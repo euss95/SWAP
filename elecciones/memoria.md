@@ -213,12 +213,18 @@ Como se puede apreciar, hemos añadido una función para añadir candidatos que 
 Para poder volver a migrar el contrato con la nueva función que hemos introducido, tendremos que hacer uso de otro comando para ello. Este comando es:
 
     $ truffle migrate --reset
+    
+![](./imagenes/CompilarContratoV2.png)
 
 Ahora sí que podremos interactuar con los candidatos dentro de la consola. Esta interacción con los candidatos de las elecciones se puede apreciar en la iamgen de a continuacuón. 
 
 ![](./imagenes/EjecucionContratoV2.png)
 
-![](./imagenes/CompilarContratoV2.png)
+Una vez hayamos iteractuado a través de la consola con los candidatos, procederemos a realizar una serie de tests. Para poder realizar estos tests, tendremos que tener la herramienta Ganache ejecutándose. Una vez la tengamos ejecutándose podremos hacer uso del comando: 
+
+    $ truffle test
+    
+
 
 ![](./imagenes/TestV2.png)
 
