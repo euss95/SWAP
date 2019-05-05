@@ -59,6 +59,10 @@ Queremos hacerla en la Blockchain, donde cualquier persona conectada a la web pu
 En vez de tener una red, un servidor central y una base da datos. La Blockchain es una red y una base de datos todo en uno. La Blockchain es una red peer to peer de ordenadores las cualres se les llama nodos. Estos comparten todos los datos y el código en la red. De modo que si un dispistivo se conecta a la red, formaría parte de la red siendo un nodo y se comunicaría con todos los nodos de cómputo de la red. Este dispositivo pasaría a tener una copia de los datos y el código de la Blockchain. Por lo que ya no tenemos más servidores centrales, tan solo un grupo de ordenadores que se comunican entre si en la misma red. 
 
 ![](./imagenes/dapp_diagram.png)
+
+Todas los datos de las transacciones que es compartido a través de los nodos de la blockchain está contenido en lo que se denomina bloque, que están encadenadoes entre si en un libro. Todos los datos se encuentran de forma pública en lo que hemos denominado 'libro' bien seguros con un hash criptográfico. Los nodos que hemos mencionado anterioremnte se aseguran de que todas las copias de los datos distribuidas a través de la red sean idénticas. Esta es una razón muy de peso por la que hemos decidido realizar una aplicación para votar a través de una cadena de bloques. 
+
+Para poder votar en nuestra aplicación, el usuario debe de tener lo que se denomina como 'wallet', es decir, cartera. En esta debe debe de tener una cuenta con Ether, la criptomoneda de Ethereum. Una vez estén conectados a la web, podrán realizar su voto pagando una pequeña comisión para escribir la transacción en la Blockchain. Esta comisión en el caso de la Blockchain de Ethereum se denomina 'GAS'. Cuando la transacción se haya creado, algunos de los nodos de la red llamados 'mineros' verificarán esta transacción y será completada. Una vez hecho este proceso, el voto habrá quedado realizado. 
  
 ##   3. Ventajas e inconvenientes de la tecnología blockchain  
 
