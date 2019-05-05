@@ -224,7 +224,11 @@ Una vez hayamos iteractuado a través de la consola con los candidatos, proceder
 
     $ truffle test
     
+El primer test comprueba que el contrato haya sido inicializado con el número correcto de candidatos. En este caso está comprobando si el número de candidatos es igual a 2. 
 
+El segundo test inspecciona que el valor de cada candidato en las elecciones. Asegurándose de que el id, nombre y número de votos sean correctos. 
+
+Como se puede comprobar, estos dos test se pasan de forma satisfactoria. 
 
 ![](./imagenes/TestV2.png)
 
