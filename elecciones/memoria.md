@@ -56,7 +56,7 @@ Queremos hacerla en la Blockchain, donde cualquier persona conectada a la web pu
 
 ![](./imagenes/web_application_diagram.png)
 
-En vez de tener una red, un servidor central y una base da datos. La Blockchain es una red y una base de datos todo en uno. 
+En vez de tener una red, un servidor central y una base da datos. La Blockchain es una red y una base de datos todo en uno. La Blockchain es una red peer to peer de ordenadores las cualres se les llama nodos. Estos comparten todos los datos y el código en la red. De modo que si un dispistivo se conecta a la red, formaría parte de la red siendo un nodo y se comunicaría con todos los nodos de cómputo de la red. Este dispositivo pasaría a tener una copia de los datos y el código de la Blockchain. Por lo que ya no tenemos más servidores centrales, tan solo un grupo de ordenadores que se comunican entre si en la misma red. 
 
 ![](./imagenes/dapp_diagram.png)
  
