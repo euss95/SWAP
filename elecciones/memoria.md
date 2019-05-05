@@ -210,9 +210,15 @@ Como se puede apreciar, hemos añadido una función para añadir candidatos que 
 
 ![](./imagenes/contratoV2.png)
 
-![](./imagenes/CompilarContratoV2.png)
+Para poder volver a migrar el contrato con la nueva función que hemos introducido, tendremos que hacer uso de otro comando para ello. Este comando es:
+
+    $ truffle migrate --reset
+
+Ahora sí que podremos interactuar con los candidatos dentro de la consola. Esta interacción con los candidatos de las elecciones se puede apreciar en la iamgen de a continuacuón. 
 
 ![](./imagenes/EjecucionContratoV2.png)
+
+![](./imagenes/CompilarContratoV2.png)
 
 ![](./imagenes/TestV2.png)
 
