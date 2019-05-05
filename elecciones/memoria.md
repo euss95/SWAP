@@ -168,9 +168,29 @@ Para instalar Metamask debemos seguir el siguiente enlace: https://metamask.io/ 
   
 ##   7. Nuestra primera aplicación
 
-![](./imagenes/TruffleConsoleV1.png)
+Una vez hemso isntalado todas las apliciciones y herramientas mencionadas anteriormente, creamos nuestros directorio 'elecciones'. Una vez creado nuestro directorio, vamos a hacer uso de la herramienta truffle que nos ayudará a crear todos los subdirectorio necesarios para abordar nuestra Dapp de votación. Tenemos los siguientes directorios:
+
+  - contracts: es realmente donde cobra vida nuestro contrato inteligente. Tambíen posee el contrato de miagración para     la blockchain. 
+  - migrations: aquí tenemos todos los archivos de migración para poder actualizar el estado de la blockchain.
+  - node_modules: aquí encontramos todas las dependencias de los nodos.
+  - src: donde desarrolamos la Dapp a nivel de usuario.
+  - test: para realizar todas las pruebas pertinentes con nuestro contrato inteligente.
+  
+Nuestra Dapp nos permitirá inscribir los candidatos que se prensetan a las elecciones y llevar la cuenta de número de votos que ha recibido cada uno. También llevará la premisa de que solo se podrá votar una vez por cuenta. 
+
+Comenzamos declarando la version de solidity que vamos a utilizar y declaramos el contracto con la palabra 'contract'. Todo esto se puede ver en la iamgen de a continuación. 
 
 ![](./imagenes/contratoV1.png)
+
+Como hemos pedido ver, hemos declarado el nombre de los candidatos a las elecciones. Además hemos declarado un cosntructor que será llamado siempre que despleguemos el contrato inteligente en la blockcahin. 
+
+Para poder desplegar el contrato en la Blockchain tendremos que crear un nuevo archivo en el directorio 'migrations'. Como podemos ver en la imagen inferior, requerimos el contrato recién creado y se lo asignamos a una varible llamada 'Election'. 
+
+![](./imagenes/TruffleConsoleV1.png)
+
+
+
+![](./imagenes/contratoV1.png) 
 
 ![](./imagenes/jsV1.png)
 
