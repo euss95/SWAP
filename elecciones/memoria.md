@@ -186,11 +186,9 @@ Como hemos pedido ver, hemos declarado el nombre de los candidatos a las eleccio
 
 Para poder desplegar el contrato en la Blockchain tendremos que crear un nuevo archivo en el directorio 'migrations'. Como podemos ver en la imagen inferior, requerimos el contrato recién creado y se lo asignamos a una varible llamada 'Election'. 
 
-![](./imagenes/TruffleConsoleV1.png)
-
-
-
 ![](./imagenes/contratoV1.png) 
+
+![](./imagenes/TruffleConsoleV1.png)
 
 ![](./imagenes/jsV1.png)
 
