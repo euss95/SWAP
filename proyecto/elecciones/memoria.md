@@ -232,8 +232,6 @@ Como se puede comprobar, estos dos test se pasan de forma satisfactoria.
 
 ![](./imagenes/TestV2.png)
 
-![](./imagenes/TestV2Fallo.png)
-
 ##   9. Bibliografía
 
 https://www.lis-solutions.es/blog/blockchain_contratos_inteligentes/
