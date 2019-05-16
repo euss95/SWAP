@@ -19,17 +19,18 @@ Una vez estemos dentro de la intefaz de línea de comandos MySQL, vamos a crear 
 
     $ mysql> create database contactos;
     $ mysql> use contactos;
-    $ create table datos(nombre varchar(100),tlf int);
-    $ insert into datos(nombre,tlf) values ("pepe",95834987);
+    $ mysql> create table datos(nombre varchar(100),tlf int);
+    $ mysql> insert into datos(nombre,tlf) values ("pepe",95834987);
     
+Para poder comprobar que todo está correcto podríamos hacer uso del comando:
 
+    $ mysql> select * from datos;
+    
+![Imagen 2](./imagenes/imagen_2.PNG)        
 
 ## Replicar una BD MySQL con mysqldump
 
 ## Replicación de BD mediante una configuración maestro-esclavo
-
-
-![iptables arranque](./imagenes/iptablesArranque.PNG)
 
 
 
