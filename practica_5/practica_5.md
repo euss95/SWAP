@@ -72,8 +72,7 @@ Ahora vamos a restaurar los datos contenidos en la base de datos.
 ## Replicación de BD mediante una configuración maestro-esclavo
 A pesar de que lo realizado anteriormente funciona perfectamente, es realizado por un operador a mano, por lo que no es muy eficiente. Por suerte MySQL tiene la opción de hacer uso de un proceso automático. A nivel de un entorno de producción real, resulta muy adecuado.  
 
+Para poder hacer uso de este proceso, lo primero que tendremos que hacer es la configuración de mysql del maestro. Siendo usuario root, vamos a editar el archivo /etc/mysql/mysql.conf.d/mysqld.cnf. Las modificaciones que tenemos que realizar a contianuación:
 
-
- 
 
 
