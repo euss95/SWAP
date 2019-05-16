@@ -15,7 +15,7 @@ Para seguir con la práctica, debemos de crear un base de datos en MySQL e inser
 
     $ mysql -uroot -p
     
-Una vez estemos dentro de la intefaz de línea de comandos MySQL, vamos a crear nuestra base de datos llamada "datos" e insertsrle datos (un registro) en el interior de esta. Todo esto lo hemos hecho con los siguientes comandos de la línea de comandos de MySQL. 
+Una vez estemos dentro de la interfaz de línea de comandos MySQL, vamos a crear nuestra base de datos llamada "datos" e insertarle datos (un registro) en el interior de esta. Todo esto lo hemos hecho con los siguientes comandos de la línea de comandos de MySQL. 
 
     $ mysql> create database contactos;
     $ mysql> use contactos;
