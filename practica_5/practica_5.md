@@ -29,6 +29,27 @@ Para poder comprobar que todo está correcto podríamos hacer uso del comando:
 ![Imagen 2](./imagenes/imagen_2.PNG)        
 
 ## Replicar una BD MySQL con mysqldump
+La herramienta mysqldump, ofrecida por MySQL, nos permite clonar la base de datos que tenemos en nuestra máquina. Esta herramienta forma parte de los programas del cliente MySQL y se pude hacer uso de ella para hacer copias de seguridad de la base de datos. Pero antes de hacer uso de esta herramienta, tendríamos que tener en cuenta que los datos pueden estár actualizándose constantemente en el servidor de BD de datos principal. Por ello vamos a evitar que se acceda a la BD para cambiar nada, antes de hacer la copia de seguridad en el archivo .SQL. 
+
+Máquina 1:
+
+    $ mysql -u root –p
+    $ mysql> FLUSH TABLES WITH READ LOCK;
+    $ mysql> quit
+    
+Con ello lo que habremos hecho es bloquear las tablas de la máquina 1. Por lo que ya podremos proceder a usar mysqldump para guardar los datos. 
+
+Máquina 1:
+    
+    $ mysqldump ejemplodb-u root -p > /tmp/ejemplodb.sql
+    
+Después de usar la orden anterior, ya sí podemos desbloquear las tablas. 
+
+Máquina 1:
+
+    $ mysql -u root –p
+    $ mysql> UNLOCK TABLES; 
+    $ mysql> quit
 
 ## Replicación de BD mediante una configuración maestro-esclavo
 
