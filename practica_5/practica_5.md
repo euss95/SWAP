@@ -63,6 +63,11 @@ Máquina 2:
     $ mysql -u root –p
     $ mysql> CREATE DATABASE ‘ejemplodb’;
     
+Ahora vamos a restaurar los datos contenidos en la base de datos. 
+
+    $ mysql -u root -p ejemplodb < /tmp/ejemplodb.sql
+    
+![Imagen 2](./imagenes/imagen_2.PNG)    
 
 
 
