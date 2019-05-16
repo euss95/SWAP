@@ -39,7 +39,7 @@ Con ello lo que habremos hecho es bloquear las tablas de la máquina 1. Por lo q
 
 Máquina 1:
     
-    $ mysqldump ejemplodb-u root -p > /tmp/ejemplodb.sql
+    $ mysqldump contactos -u root -p > /tmp/contactos.sql
     
 Después de usar la orden anterior, ya sí podemos desbloquear las tablas. 
 
@@ -52,18 +52,18 @@ Ahora ya podemos ejecutar la copia de seguridad en la máquina 2.
 
 Máquina 2:
 
-    $ scp maquina1:/tmp/ejemplodb.sql /tmp/
+    $ scp 192.168.1.100:/tmp/contactos.sql /tmp/
     
 Al haber ejecutado el comando anterior, ya tendremos el archivo en la máquina 2 y podemos importar la base de datos completa en el MySQL. Para ello creamos la BD con las líneas de comando de a continuación. 
 
 Máquina 2: 
 
     $ mysql -u root –p
-    $ mysql> CREATE DATABASE ‘ejemplodb’;
+    $ mysql> CREATE DATABASE ‘contactos’;
     
 Ahora vamos a restaurar los datos contenidos en la base de datos. 
 
-    $ mysql -u root -p ejemplodb < /tmp/ejemplodb.sql
+    $ mysql -u root -p contactos < /tmp/contactos.sql
     
 ![Imagen 3](./imagenes/imagen_3.PNG)    
 
