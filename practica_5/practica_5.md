@@ -11,7 +11,18 @@ En la prática 2 ya vimos cómo dejar un tar.gz en un directorio y moverlo a otr
 ![Imagen 1](./imagenes/imagen_1.PNG)    
 
 ## Crear una BD e insertar datos
-Para seguir con la prática, debemos de crear un base de datos en MySQL e insertarle algunos datos. Con ello tenderemos datos para poder hacer las copias de seguridad de ahora en adelante. En todo momento haremos uso de la interfaz de línea de comandos de MySQL.  
+Para seguir con la prática, debemos de crear un base de datos en MySQL e insertarle algunos datos. Con ello tenderemos datos para poder hacer las copias de seguridad de ahora en adelante. En todo momento haremos uso de la interfaz de línea de comandos de MySQL. Para poder iniciar esta línea de comandos escribiremos el comando:
+
+    $ mysql -uroot -p
+    
+Una vez estemos dentro de la intefaz de línea de comandos MySQL, vamos a crear nuestra base de datos llamada "datos" e insertsrle datos (un registro) en el interior de esta. Todo esto lo hemos hecho con los siguientes comandos de la línea de comandos de MySQL. 
+
+    $ mysql> create database contactos;
+    $ mysql> use contactos;
+    $ create table datos(nombre varchar(100),tlf int);
+    $ insert into datos(nombre,tlf) values ("pepe",95834987);
+    
+
 
 ## Replicar una BD MySQL con mysqldump
 
