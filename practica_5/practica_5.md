@@ -121,3 +121,16 @@ Para solucionarlo fuimos a la carpeta /var/lib/mysql y eliminamos el archivo aut
 Y ya obtenemos el siguiente status:
  
 ![Imagen4](./imagenes/slave_status.PNG) 
+
+Para comprobar que todo funciona, hemos añadido 2 filas en la máquina 1:
+
+![Imagen5](./imagenes/añadida_fila_maestro.PNG)
+
+Y cuando ejecutamos en la máquina 2:
+
+    $ mysql> select * from contactos.datos;   
+   
+Obtenemos el siguiente resultado:
+
+![Imagen6](./imagenes/añadida_fila_esclavo.PNG)
+    
