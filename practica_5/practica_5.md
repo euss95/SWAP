@@ -76,4 +76,19 @@ Para poder hacer uso de este proceso, lo primero que tendremos que hacer es la c
 Guardamos las modificaciones realizadas y reinciamos el servicio:
 
     $ /etc/init.d/mysql restart
+    
+Para la máquina 2 realizamos los mismos cambios pero cambiando server-id = 1, por server-id = 2. Ahora entramos en la línea de comandos de MySQL y ejecutamos las sigueintes sentencias en la máquina 1. 
 
+Máquina 1:
+
+    mysql> CREATE USER esclavo IDENTIFIED BY 'esclavo';
+    mysql> GRANT REPLICATION SLAVE ON *.* TO 'esclavo'@'%' IDENTIFIED BY 'esclavo';
+    mysql> FLUSH PRIVILEGES;
+    mysql> FLUSH TABLES;
+    mysql> FLUSH TABLES WITH READ LOCK;
+    
+Para terminar la configuación de esta máquina, obtenemos los datos de la BD: 
+
+    mysql> SHOW MASTER STATUS;
+    
+![Imagen 2](./imagenes/master_status.PNG) 
