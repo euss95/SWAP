@@ -67,12 +67,10 @@ Ahora vamos a restaurar los datos contenidos en la base de datos.
 
     $ mysql -u root -p ejemplodb < /tmp/ejemplodb.sql
     
-![Imagen 2](./imagenes/imagen_2.PNG)    
-
-
-
+![Imagen 3](./imagenes/imagen_3.PNG)    
 
 ## Replicación de BD mediante una configuración maestro-esclavo
+A pesar de que lo realizado anteriormente funciona perfectamente, es realizado por un operador a mano, por lo que no es muy eficiente. Por suerte MySQL tiene la opción de hacer uso de un proceso automático. A nivel de un entorno de producción real, resulta muy adecuado.  
 
 
 
