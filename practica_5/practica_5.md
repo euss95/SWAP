@@ -74,5 +74,9 @@ A pesar de que lo realizado anteriormente funciona perfectamente, es realizado p
 
 Para poder hacer uso de este proceso, lo primero que tendremos que hacer es la configuración de mysql del maestro. Siendo usuario root, vamos a editar el archivo /etc/mysql/mysql.conf.d/mysqld.cnf. Las modificaciones que tenemos que realizar a contianuación:
 
-
+    bind-address 127.0.0.1
+    log_error = /var/log/mysql/error.log
+    server-id = 1
+    log_bin = /var/log/mysql/bin.log
+    /etc/init.d/mysql restart
 
