@@ -72,5 +72,7 @@ Para poder hacer uso de este proceso, lo primero que tendremos que hacer es la c
 
     # bind-address 127.0.0.1
     server-id = 1
+    
+    
     /etc/init.d/mysql restart
 
