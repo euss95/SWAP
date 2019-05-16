@@ -26,7 +26,7 @@ Para poder comprobar que todo está correcto podríamos hacer uso del comando:
 
     $ mysql> select * from datos;
     
-![Imagen 2](./imagenes/imagen_2.PNG)        
+![Imagen 2](./imagenes/añadida_fila_esclavo.PNG)        
 
 ## Replicar una BD MySQL con mysqldump
 La herramienta mysqldump, ofrecida por MySQL, nos permite clonar la base de datos que tenemos en nuestra máquina. Esta herramienta forma parte de los programas del cliente MySQL y se pude hacer uso de ella para hacer copias de seguridad de la base de datos. Pero antes de hacer uso de esta herramienta, tendríamos que tener en cuenta que los datos pueden estár actualizándose constantemente en el servidor de BD de datos principal. Por ello vamos a evitar que se acceda a la BD para cambiar nada, antes de hacer la copia de seguridad en el archivo .SQL. 
