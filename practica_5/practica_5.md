@@ -49,7 +49,23 @@ Máquina 1:
 
     $ mysql -u root –p
     $ mysql> UNLOCK TABLES; 
-    $ mysql> quit
+    
+Ahora ya podemos ejecutar la copia de seguridad en la máquina 2. 
+
+Máquina 2:
+
+    $ scp maquina1:/tmp/ejemplodb.sql /tmp/
+    
+Al haber ejecutado el comando anterior, ya tendremos el archivo en la máquina 2 y podemos importar la base de datos completa en el MySQL. Para ello creamos la BD con las líneas de comando de a continuación. 
+
+Máquina 2: 
+
+    $ mysql -u root –p
+    $ mysql> CREATE DATABASE ‘ejemplodb’;
+    
+
+
+
 
 ## Replicación de BD mediante una configuración maestro-esclavo
 
