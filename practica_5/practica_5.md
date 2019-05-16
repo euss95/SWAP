@@ -105,4 +105,19 @@ Por último volvemos a la máquina 1 y ejecutamos:
 
     mysql> UNLOCK TABLES;
     
+Pero cuando fuimos a comprobar que todo funcionaba correctamente, utilizando el comando:
 
+    mysql> SHOW SLAVE STATUS\G
+    
+Nos dió el fallo 1593:
+
+    Last_IO_Errno: 1593
+    Last_IO_Error: Fatal error: The slave I/O thread stops because master and slave have equal MySQL server ids; these ids  must be different for replication to work (or the --replicate-same-server-id option must be used on slave but this does not always make sense; please check the manual before using it).
+    
+Para solucionarlo fuimos a la carpeta /var/lib/mysql y eliminamos el archivo auto.cnf en la máquina 2. Este archivo se vuelve a crear cuando ejecutamos la orden:
+
+     mysql> CHANGE MASTER TO MASTER_HOST='192.168.1.100', MASTER_USER='esclavo', MASTER_PASSWORD='esclavo',         MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=1530, MASTER_PORT=3306;
+     
+Y ya obtenemos el siguiente status:
+ 
+![Imagen4](./imagenes/slave_status.PNG) 
