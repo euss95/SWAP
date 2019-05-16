@@ -91,4 +91,18 @@ Para terminar la configuación de esta máquina, obtenemos los datos de la BD:
 
     mysql> SHOW MASTER STATUS;
     
-![Imagen 2](./imagenes/master_status.PNG) 
+![Imagen3](./imagenes/master_status.PNG) 
+
+Ahora en la línea de comandos de MySQL en la máquina 2, le damos los datos de la máquina 1. Para darle los datos ejecutamos la siguiente instrucción:
+
+    mysql> CHANGE MASTER TO MASTER_HOST='192.168.1.100', MASTER_USER='esclavo', MASTER_PASSWORD='esclavo',         MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=1530, MASTER_PORT=3306;
+    
+Y ahora ejecutamos el comando:
+
+    mysql> START SLAVE;
+    
+Por último volvemos a la máquina 1 y ejecutamos:
+
+    mysql> UNLOCK TABLES;
+    
+
