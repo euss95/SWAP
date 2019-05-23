@@ -26,6 +26,14 @@ Una vez hayamos hecho todo lo anterior, procederemos a reiniciar el servicio.
 
     
 ## Configurar los clientes
+Ahora tenemos que trabajar con las máquinas de los clientes. De modo que vamos a instalar una serie de paquetes necesarios y crear el punto de monataje de las máquinas 1 y 2.
+
+    $ sudo apt-get install nfs-common rpcbind 
+    $ cd /home/usuario
+    $ mkdir carpetacliente
+    $ chmod -R 777 carpetacliente
+    
+
 
 ![Imagen6](./imagenes/)
     
