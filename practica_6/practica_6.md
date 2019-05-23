@@ -3,7 +3,9 @@
 Eugenio Alcántara García  
 Pablo García Llorente
 
-## Crear un tar con ficheros locales y copiarlos en un equipo remoto
+## Configurar el servidor NFS
 
-![Imagen6](./imagenes/añadida_fila_esclavo.PNG)
+## Configurar los clientes
+
+![Imagen6](./imagenes/)
     
