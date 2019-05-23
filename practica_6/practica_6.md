@@ -15,9 +15,16 @@ Ahora crearemos la carpeta que vamos a compartir posteriormente. Además cambiar
     $ mkdir /dat/compartida
     $ sudo chown nobody:nogroup /dat/compartida/ 
     $ sudo chmod -R 777 /dat/compartida/
+    
+Debemos editar el archivo de configuración /etc/exports. Lo que vamos a hacer es dar permisos de acceso a las máquinas clientes, esto lo vamos a hacer añadiendo las IPs correspondientes. 
+
+    /dat/compartida/ 10.10.10.9(rw) 10.10.10.10(rw)
+    
+Una vez hayamos hecho todo lo anterior, procederemos a reiniciar el servicio.
+
+    $ sudo service nfs-kernel-server restart
 
     
-
 ## Configurar los clientes
 
 ![Imagen6](./imagenes/)
