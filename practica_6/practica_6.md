@@ -43,7 +43,7 @@ Después comprobaremos que se puede leer y escrbir los archivos que tenemos alma
 
     
     10.10.10.13:/dat/compartida /home/usuario/carpetacliente/ nfs auto,noatime,nolock,bg,nfsvers=3,intr,tcp,actimeo=1800 0 0
-Como podemos ver en esta ltima imagen, el servidor funciona de forma correcta. 
+Como podemos ver en esta última imagen, el servidor funciona de forma correcta. 
 
 ![Imagen6](./imagenes/MaquinaServidorFuncionamiento.PNG)
     
