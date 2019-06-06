@@ -32,8 +32,18 @@ Ahora tenemos que trabajar con las máquinas de los clientes. De modo que vamos 
     $ cd /home/usuario
     $ mkdir carpetacliente
     $ chmod -R 777 carpetacliente
+
+![Imagen6](./imagenes/MaquinaClienteFuncionamiento.PNG)
+
+Como se puede apreciar, funciona correctamente. Ahora podemos proceder a montar la carpeta remota (la exportada en el servidor). Esto lo haremos con la instrucción:
+
+    $ sudo mount 10.10.10.13:/dat/compartida carpetacliente
     
+Después comprobaremos que se puede leer y escrbir los archivos que tenemos almacenados en la caprpeta compartida. Finalmente en el archivo /etc/fstab vamos a introducir la línea de a continuación para que esta configuración se quede de forma permanente.
 
+    
+    10.10.10.13:/dat/compartida /home/usuario/carpetacliente/ nfs auto,noatime,nolock,bg,nfsvers=3,intr,tcp,actimeo=1800 0 0
+Como podemos ver en esta ltima imagen, el servidor funciona de forma correcta. 
 
-![Imagen6](./imagenes/)
+![Imagen6](./imagenes/MaquinaServidorFuncionamiento.PNG)
     
